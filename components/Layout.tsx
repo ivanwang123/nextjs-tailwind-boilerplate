@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 
-type PropTypes = {
+type PropType = {
   children?: ReactNode;
   title?: string;
 };
 
-const Layout = ({ children, title = "Default title" }: PropTypes) => (
+const Layout = ({ children, title = "Default title" }: PropType) => (
   <div>
     <Head>
       <title>{title}</title>
